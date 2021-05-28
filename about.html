@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about-style.css">
+    <!-- <script src="script.js"></script> -->
+    <title>The Coffee House</title>
+    <link rel="icon" href="images/logo3.png" type="image/gif" sizes="30x30">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Sans+Pro:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/logo3.png" alt=""></a>
+            <ul class="nav-ul">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>  
+            <div class="hamburger" id="hamburger"><i class="fa fa-bars"></i></div>
+        </nav>
+    </header>
+    <section class="about-us">
+        <div class="about-us-text">
+            <h1>ABOUT US</h1>
+        </div>
+    </section>
+    <section id="about-us-details">
+        <h2 class="line1" data-aos="fade-up">WHAT HAPPENS HERE</h2>
+        <h1 class="line2" data-aos="fade-up">DISCOVER OUR CAFE.</h1>
+        <div class="content" data-aos="fade-up">
+            <p >
+                The Coffee House is a cafe located Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi soluta minima
+                minus quos libero repellendus cum. Perferendis veritatis facilis sequi facere perspiciatis officia hic odio ipsa
+                voluptatibus, magnam voluptatum provident, the most famous of
+                The Coffee House branches in India. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque alias
+                voluptatum
+                ea saepe inventore dolor sed possimus mollitia laborum vitae quis eius consectetur similique, natus aperiam
+                accusamus velit libero fugit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt doloremque velit quis similique asperiores tenetur
+                ipsa voluptate assumenda natus facilis optio sint in modi omnis temporibus magnam sit, voluptatibus 
+                ipsa voluptate assumenda natus facilis optio sint in modi omnis temporibus magnam sit, voluptatibus 
+                reprehenderit!.l orem
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore nihil sed dolorem suscipit temporibus commodi esse accusamus. Rerum assumenda, ab incidunt magnam corrupti pariatur quasi eos doloribus error.
+            </p>
+        </div>
+    </section>
+    <section id="award">
+            <h2 class="line2" data-aos="fade-up">AWARDS</h2>
+            <p data-aos="fade-up">Lorem ipsum dolor inus quos libero repellendus cum. Perferendis veritatis facilis sequi facere perspiciatis officia hic odio ipsa
+                voluptatibus, magnam voluptatum provident, the most famous of
+                The Coffee House branches in India. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque alias</p>
+            <div id="award-items">
+                <div class="award-container"><img src="images/client-logo-cafe-WordPress-theme.png" alt=""></div>
+                <div class="award-container"><img src="images/client-logo-2-cafe-WordPress-theme.png" alt=""></div>
+                <div class="award-container"><img src="images/client-logo-1-cafe-WordPress-theme.png" alt=""></div>
+                <div class="award-container"><img src="images/client-logo-3-cafe-WordPress-theme.png" alt=""></div>
+                <div class="award-container"><img src="images/client-logo-4-cafe-WordPress-theme.png" alt=""></div>
+            </div>
+    </section>
+    <section >
+        <div id="footer">
+            <div id="copyright">Copyright © 2021 The Coffee House. All Rights Reserved.</div>
+            <div id="logo"><img src="images/logo3.png" alt=""></div>
+            <div id="facebook">
+                <a href="http://www.facebook.com" target="_blank"> <img  src="images/facebook.png" alt=""></a>
+                <a href="http://www.twitter.com" target="_blank"><img src="images/iconfinder_twitter__social__media_icons_2986205.png" alt=""></a>
+                <a href="http://www.instagram.com" target="_blank"><img src="images/iconfinder_isntagram__social__media_icon_2986198.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration:1000,
+        });
+    </script>
+    <script type="text/javascript">
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('a');
+        const menuLength=menuItem.length;
+        for(let i=0;i<menuLength;i++)
+        {
+            if(menuItem[i].href==currentLocation)
+            {
+                menuItem[i].className="active";
+            }
+        }
+        const navSlide =()=>{
+            const hamburger= document.querySelector('.hamburger');
+            const navul=document.querySelector('.nav-ul');
+            const navLinks=document.querySelectorAll('.nav-ul li');
+            hamburger.addEventListener('click',()=>{
+                navul.classList.toggle('nav-active');
+                navLinks.forEach((link,index)=>{
+                    if(link.style.animation)
+                    {
+                        link.style.animation='';
+                    }
+                    else{
+                        link.style.animation= `navFadeLink 0.5s ease forwards ${index/7+0.5}s`; 
+                    }
+              });
+            });
+        }
+        navSlide();
+    </script>
+</html>

@@ -1,0 +1,649 @@
+body{
+    background-color: #fff;
+}.menu-main{
+    background-image: url(../images/menu-background.jpeg);
+    background-size:100% 100%;
+}
+.menu-main > *{
+    position: relative;
+    z-index: 2;
+}
+.menu-main::after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background:rgba(0,0,0,0.37);
+}
+
+.menu-main-text{
+  color: white;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  font-family:'Merienda','cursive';
+  justify-content: center;
+  flex-direction: column;
+}
+.menu-main h1{
+  padding: 0%;
+  margin: 0%;
+  margin-top: 20px;
+  font-size: 50px;
+  font-style: italic;
+  animation:  text 5s 1;
+  animation-delay: 0.4s;
+  letter-spacing: 0.25em;
+}
+@keyframes text{
+  0%{
+    color: transparent;
+    margin-bottom: -120px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+}
+.menu{
+    height: auto;
+    background-color: #f6f9fc;
+    padding-left:0mm;
+}
+.item-details{
+    overflow-x: hidden;
+}
+#coffee, #sandwich, #burger, #fries, #pizza{
+    position: relative;
+    display: flex;
+}
+#coffee-container{
+    background-color: #f6f9fc;
+    padding-bottom: 50px;
+}
+#burger-container{
+    background-color: #ffffff;
+    padding-bottom: 50px;
+}
+#burger img, #pizza img{
+    margin-left: 0px;
+    padding-right: 100px;
+}
+#sandwich-container{
+    background-color: #f6f9fc;
+    padding-bottom: 50px;
+}
+#pizza-container{
+    background-color: #ffffff;
+    padding-bottom: 50px;
+}
+
+#fries-container{
+    background-color: #f6f9fc;
+    padding-bottom: 50px;
+}
+.img-res{
+    display: block;
+}
+.menu-items :hover{
+   color: #3a3d43;
+}
+.menu-items{
+    cursor: auto;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+#foot{
+    position: relative;
+ }
+ @media screen and (min-width:2100px) {
+  .menu-main h1{
+    font-size: 90px;
+  }
+ .line2{
+   margin-top: 30px;
+ }
+  .menu-items{
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+  #coffee-container,#burger-container,#sandwich-container,#fries-container,#pizza-container{
+    padding-bottom: 140px;
+  }
+  .item-details{
+    margin-left: 200px;
+  }
+ }
+ @media screen and (max-width: 1350px){
+      .menux{
+          height: 350px;
+          width: 450px;
+      }
+      .item1{
+        font-size: 28px;
+      }
+      .item-description p{
+        font-size: 16px;
+      }
+      .price{
+        font-size: 30px;
+      }
+      
+      #dash3{
+          width: 240px;
+      }
+      #dash22{
+          width: 225px;
+      }
+      #dash33{
+          width: 75px;
+      }
+      #dash42{
+          width: 156px
+      }
+      #dash43{
+          width: 265px;
+      }
+      #dash52{
+          width: 100px;
+      }
+      #dash53{
+          width: 238px;
+      }
+ }
+ @media screen and (max-width: 1250px){
+    
+    
+      .menux{
+        height: 300px;
+        width: 400px;
+    }
+    .item1{
+      font-size: 25px;
+    }
+    .item-description p{
+      font-size: 15px;
+    }
+    .price{
+      font-size: 30px;
+    }
+    #dash3{
+        width: 245px;
+    }
+    #dash22{
+        width: 222px;
+    }
+    #dash33{
+        width: 75px;
+    }
+    #dash42{
+        width: 156px
+    }
+    #dash43{
+        width: 257px;
+    }
+    #dash52{
+        width: 113px;
+    }
+    #dash53{
+        width: 238px;
+    }
+ }
+ @media screen and (max-width: 1200px){
+    .menu-main-text,.menu-main::after {
+        height: 95vh;
+      }.menux{
+        height: 280px;
+        width: 380px;
+    }
+    .item1{
+      font-size: 23px;
+    }
+    .item-description p{
+      font-size: 13px;
+    }
+    .price{
+      font-size: 28px;
+    }
+    #dash3{
+        width: 254px;
+    }
+    #dash22{
+        width: 219px;
+    }
+    #dash33{
+        width: 75px;
+    }
+    #dash42{
+        width: 156px
+    }
+    #dash43{
+        width: 250px;
+    }
+    #dash52{
+        width: 113px;
+    }
+    #dash53{
+        width: 230px;
+    }
+    #logo img{
+        height: 130px;
+        width: 110px;
+      }
+    #footer{
+        font-size: 12px;
+        padding-left: 10px;
+      }
+ }
+ @media screen and (max-width: 1150px) {
+    .menu-main h1{
+      font-size: 45px;
+    }
+    .menux{
+        height: 270px;
+        width: 370px;
+    }
+    .item1{
+      font-size: 21px;
+    }
+    .item-description p{
+      font-size: 12px;
+      margin-right: 200px;
+    }
+    .price{
+      font-size: 26px;
+    }
+    #dash1{
+        width: 260px;
+    }
+    #dash2{
+        width: 250px;
+    }
+    #dash3{
+        width: 180px;
+    }
+    #dash22{
+        width: 210px;
+    }
+    #dash33{
+        width: 80px;
+    }
+    #dash42{
+        width: 160px
+    }
+    #dash43{
+        width: 250px;
+    }
+    #dash51{
+        width: 230px;
+    }
+    #dash52{
+        width: 110px;
+    }
+    #dash53{
+        width: 220px;
+    }
+ }
+  @media screen and (max-width: 1100px) {
+    .menu-main-text,.menu-main::after {
+      height: 90vh;
+    }
+    #logo img{
+      height: 120px;
+      width: 100px;
+    }
+    #footer{
+      font-size: 12px;
+      padding-left: 10px;
+    }
+ }
+
+  @media screen and (max-width: 1070px) {
+    #dash21{
+        width: 100px;
+    }
+    #dash22{
+        width: 165px;
+    }
+    #dash23{
+        width: 120px;
+    }
+    #dash41{
+        width: 130px;
+    }
+    #dash42{
+        width: 105px;
+    }
+    #dash43{
+       width: 195px;
+    }
+    #dash51{
+        width: 210px;
+    }
+    #dash52{
+        width: 90px;
+    }
+    #dash53{
+        width: 195px;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .item-margin{
+      margin-left: 70px;
+    }
+  }
+ @media screen and (max-width: 1030px) {
+    .item-margin{
+      margin-left: 50px;
+  }
+  }
+  @media screen and (max-width: 1000px) {
+        .menu-main-text,.menu-main::after {
+          height: 85vh;
+        }
+    #burger,#coffee,#fries,#sandwich,#pizza{
+        flex-direction: column;
+      }
+      .menux{
+          height: 370px;
+          width: 470px;
+          margin-bottom: 30px;
+        }
+
+        #coffee img,#pizza img,#burger img,#fries img,#sandwich img{
+            margin-left: 0mm;
+            padding-right: 0mm;
+            margin-right: 0%;
+        }
+    .img-resp{
+          display: flex;
+          justify-content: center;
+      }
+      .item-details{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0mm;
+          padding: 0mm;
+      }
+      #latte,#mocha,#cappuccino{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      .item-description p{
+          width: unset;
+          margin: 0mm;
+          font-size: 15px;
+          margin-left: 10px;
+      }
+      .item-name{
+          width: unset;
+      }
+      .item-margin{
+          margin: 0mm;
+      }
+      #Chicken-Burger,#Hamburger,#Veggie-Burger,#Chicken-Sandwich,#Grilled-Sandwich,#Meat-Ball-Sandwich,#Chicken-Pizza,#Pepperoni-Pizza,#Veg-Pizza
+      ,#Tater-Tots,#Sweet-Potato-Fries,#Curly-Fries{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    #burger,#pizza{
+        flex-direction: column-reverse;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .menu-main-text,.menu-main::after {
+      height: 80vh;
+    }
+}
+  @media screen and (max-width: 800px) {
+    .menu-main-text,.menu-main::after {
+        height: 75vh;
+      }
+    body{
+      overflow-x: hidden;
+    }
+    .menu-main h1{
+      font-size: 40px;
+    }
+    
+    #logo img{
+        height: 90px;
+        width: 70px;
+      }
+      #footer{
+        font-size: 12px;
+        padding-left: 10px;
+      }
+      #facebook img{
+        height: 25px;
+        width: 25px;
+      }
+  }
+  .nav-active{
+    transform: translateX(0%);
+  }
+  @keyframes navFadeLink {
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    
+  }
+  @media screen and (max-width: 650px) {
+      .menu-main-text,.menu-main::after {
+          height: 70vh;
+      }
+      .menu-main h1{
+        font-size: 35px;
+      }
+      #logo img{
+          height: 60px;
+          width: 40px;
+      }
+      #footer{
+        font-size: 10px;
+      }
+      #facebook img{
+        height: 20px;
+        width: 20px;
+      }
+  }
+  @media screen and (max-width: 580px) {
+    .menu-main-text,.menu-main::after {
+        height: 65vh;
+    }
+    .menu-main h1{
+      font-size: 30px;
+    }
+    #logo img{
+        height: 50px;
+        width: 40px;
+    }
+    #footer{
+      font-size: 8px;
+    }
+    #facebook img{
+      height: 15px;
+      width: 15px;
+    }
+  }
+  @media screen and (max-width: 550px)
+  {
+    .menux{
+        height: 270px;
+        width: 370px;
+        margin-bottom: 30px;
+      }
+      .item-description p{
+          font-size: 13px;
+      }
+      .item1{
+          font-size: 16px;
+      }
+      .price{
+          font-size: 20px;
+      }
+      #dash3{
+          width: 200px;
+      }
+      #dash43{
+          width: 175px;
+      }
+      #dash52{
+          width: 120px;
+      }
+  }
+  @media screen and (max-width: 540px) {
+    .menu-main-text,.menu-main::after {
+        height: 60vh;
+      }
+    .menu-main h1{
+      font-size: 25px;
+    }
+    #logo img{
+        height: 50px;
+        width: 40px;
+      }
+      #footer{
+        font-size: 6px;
+      }
+      #facebook img{
+        height: 10px;
+        width: 10px;
+      }
+  }
+  @media screen and (max-width: 500px)
+  {
+    .item1{
+      font-size: 17px;
+    }
+    .price{
+      font-size: 23px;
+    }
+    .item-description p{
+      font-size: 10px;
+    }
+    .menux{
+      height: 243px;
+      width: 308px;
+    }
+    #dash1{
+       width: 200px;
+    }
+    #dash2{
+      width:195px;
+    }
+    #dash3{
+      width: 137px;
+    }
+    #dash21{
+      width: 80px;
+    }
+    #dash22{
+      width: 135px;
+    }
+    #dash23{
+      width: 95px;
+    }
+    #dash31{
+      width: 80px;
+    }
+    #dash32{
+      width: 83px;
+    }
+    #dash33{
+      width: 60px;
+    }
+    #dash43{
+      width: 178px;
+    }
+    #dash51{
+      width: 150px;
+    }
+    #dash52{
+      width: 50px;
+    }
+    #dash53{
+      width: 140px;
+    }
+}
+@media screen and (max-width: 400px)
+  {
+    
+    .menux{
+      height: 220px;
+      width: 278px;
+    } 
+  }
+@media screen and (max-width: 350px){
+  .menux{
+    height: 180px;
+    width: 224px;
+  }
+  #dash1{
+     width: 100px;
+  }
+  #dash2{
+    width:95px;
+  }
+  #dash3{
+    width: 52px;
+  }
+  #dash21{
+    width: 20px;
+  }
+  #dash22{
+    width: 60px;
+  }
+  #dash23{
+    width: 30px;
+  }
+  #dash31{
+    width: 10px;
+  }
+  #dash32{
+    width: 13px;
+  }
+  #dash33{
+    width: 0px;
+  }
+  #dash41{
+    width: 40px;
+  }
+  #dash42{
+    width: 20px;
+  }
+  #dash43{
+    width: 75px;
+  }
+  #dash51{
+    width: 70px;
+  }
+  #dash52{
+    width: 00px;
+  }
+  #dash53{
+    width: 60px;
+  }
+  .item1{
+    font-size: 12px;
+  }
+  .price{
+    font-size: 18px;
+  }
+  .item-description p{
+    font-size: 7px;
+  }
+ }
